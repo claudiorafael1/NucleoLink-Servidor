@@ -1,0 +1,12 @@
+/data/
+/logs/
+/backups/
+/public_url.txt
+/.server.pid
+/.tunnel.pid
+*.sqlite3*
+*.token
+.env
+.env.*
+README.md
+PUBLICAR_NO_GITHUB.md
