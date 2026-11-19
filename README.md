@@ -157,7 +157,4 @@ bash ~/NucleoLink/status.sh
 **EN:** These tests verify basic server functionality, but do not replace security audits, hardware testing or production monitoring.  
 **PT-BR:** Os testes verificam as funções básicas do servidor, mas não substituem auditoria de segurança, testes no hardware e monitoramento de produção.
 
-## 📚 Publishing and license / Publicação e licença
 
-**EN:** See [PUBLICAR_NO_GITHUB.md](PUBLICAR_NO_GITHUB.md) for publication steps using the terminal and browser, and [LICENSE](LICENSE) for the MIT license terms.  
-**PT-BR:** Consulte [PUBLICAR_NO_GITHUB.md](PUBLICAR_NO_GITHUB.md) para instruções por terminal e pelo navegador, e [LICENSE](LICENSE) para os termos MIT.
