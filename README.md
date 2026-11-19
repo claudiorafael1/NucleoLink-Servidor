@@ -112,26 +112,35 @@ bash ~/NucleoLink/start.sh
 **EN, LAN P2P:** The server provides peer discovery (`/api/p2p/announce` and `/api/p2p/peers`), while Cardputers exchange UDP packets directly on port 18782. This does not open a UDP port on the server or router. Use the relay between different external networks. Compatible firmware is required.  
 **PT-BR, P2P LAN:** O servidor disponibiliza descoberta de pares (`/api/p2p/announce` e `/api/p2p/peers`), mas os próprios Cardputers realizam a troca UDP na porta 18782. A porta UDP não é aberta no servidor nem no roteador. Em redes externas diferentes, use o relay. Sem firmware compatível, as rotas P2P não bastam para estabelecer comunicação.
 
-## 📦 Firmware `.bin` location / Onde adicionar os arquivos `.bin`
+## 📦 Firmware downloads / Downloads dos firmwares `.bin`
 
-**EN:** To publish the two separately compiled firmware images alongside the server, put them **in this repository folder**:  
-**PT-BR:** Para publicar junto do servidor dois firmwares compilados separadamente, adicione-os **na pasta deste repositório**:
+**EN:** The firmware files are located in the **`firmware/builds/` directory** of the GitHub repository. Choose the file that matches your device:
+
+**PT-BR:** Os arquivos de firmware `.bin` ficam na pasta **`firmware/builds/`** do repositório GitHub. Escolha o arquivo correspondente ao seu aparelho:
 
 ```text
-firmware/builds/cardputer_v1.bin
-firmware/builds/cardputer_adv.bin
+firmware/
+└── builds/
+    ├── cardputer_v1.bin    # Cardputer V1
+    └── cardputer_adv.bin   # Cardputer ADV
 ```
 
-**EN:** Or, on the computer where the server is installed:  
-**PT-BR:** Ou, no computador em que o servidor foi instalado:
+**EN:** Open `firmware`, then `builds`, and select the appropriate `.bin` file to download. The standalone server installer does **not** compile firmware. The files must be committed to the repository separately; if they are not listed on GitHub, they have not been published in that version.
+
+**PT-BR:** Abra a pasta `firmware`, depois `builds`, e selecione o `.bin` correspondente para baixar. O instalador independente do servidor **não compila** firmware. Os arquivos precisam ser publicados separadamente no repositório; se não aparecerem no GitHub, não foram incluídos naquela versão.
+
+**EN:** On a computer where the firmware was compiled, the files may be found at:
+
+**PT-BR:** No computador onde o firmware foi compilado, os arquivos podem estar em:
 
 ```text
 ~/NucleoLink/firmware/builds/cardputer_v1.bin
 ~/NucleoLink/firmware/builds/cardputer_adv.bin
 ```
 
-**EN:** The installer **does not produce `.bin` files**. The package ships without firmware. Do not flash an older `.bin` unless it has been validated against the v3 pairing endpoints and the correct hardware variant. See `firmware/builds/README.md`.  
-**PT-BR:** O instalador **não produz `.bin`**. A pasta vem sem firmware. Não use `.bin` antigo, que não tenha sido validado com os endpoints de pareamento v3 e a variante do aparelho. Consulte `firmware/builds/README.md`.
+**EN:** Only flash firmware that matches your hardware model and has been tested on a physical device.
+
+**PT-BR:** Grave somente firmware compatível com seu modelo e que tenha sido testado no dispositivo físico.
 
 ## 🔍 Current security and limitations / Segurança e limites atuais
 
@@ -156,5 +165,4 @@ bash ~/NucleoLink/status.sh
 
 **EN:** These tests verify basic server functionality, but do not replace security audits, hardware testing or production monitoring.  
 **PT-BR:** Os testes verificam as funções básicas do servidor, mas não substituem auditoria de segurança, testes no hardware e monitoramento de produção.
-
 
